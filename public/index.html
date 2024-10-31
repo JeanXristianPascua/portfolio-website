@@ -1,43 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title and Basic Meta Tags -->
+    <title>Jean Xristian Pascua | Portfolio</title>
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Portfolio of Jean Xristian Pascua, a Software Developer and Cybersecurity Enthusiast showcasing skills and projects."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta
+      name="keywords"
+      content="Jean Xristian Pascua, Software Developer, Cybersecurity, Portfolio, React, Frontend, Backend"
+    />
+    <meta name="author" content="Jean Xristian Pascua" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- Open Graph / Social Media Sharing Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jean Xristian Pascua | Portfolio" />
+    <meta
+      property="og:description"
+      content="Showcasing skills in software development and cybersecurity."
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/portfolio-thumbnail.png" />
+    <!-- Replace with actual image URL -->
+    <meta property="og:url" content="https://your-username.vercel.app" />
+    <!-- Replace with your deployed URL -->
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jean Xristian Pascua | Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Discover the software development expertise and projects of Jean Xristian Pascua."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/portfolio-thumbnail.png" />
+
+    <!-- Structured Data for Rich Snippets -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jean Xristian Pascua",
+        "jobTitle": "Software Developer",
+        "url": "https://your-username.vercel.app",
+        "sameAs": [
+          "https://www.linkedin.com/in/jeanxristianpascua/",
+          "https://github.com/JeanXristianPascua"
+        ],
+        "description": "Jean Xristian Pascua is a software developer specializing in web and mobile application development, with a strong interest in cybersecurity.",
+        "image": "%PUBLIC_URL%/portfolio-thumbnail.png",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Your Current or Past Employer"
+        }
+      }
+    </script>
+
+    <!-- Favicon and Icons -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <!-- Manifest for Progressive Web App (optional) -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- CSS Reset and Global Styles -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/global.css" />
+
+    <!-- Fonts (Optional) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <style>
+      /* Skip Link Styles */
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #4c4cff;
+        color: #ffffff;
+        padding: 8px;
+        z-index: 1000;
+        text-decoration: none;
+      }
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      .skip-link:focus {
+        top: 0;
+      }
+    </style>
   </body>
 </html>
