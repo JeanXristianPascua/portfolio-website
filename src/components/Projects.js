@@ -46,20 +46,6 @@ const Projects = () => {
         </>
       ),
     },
-    {
-      title: "Task Management App",
-      description:
-        "An application that allows users to manage tasks with user authentication, secure backend features, and a user-friendly interface for organizing and tracking productivity. (Currently under development)",
-      details: (
-        <>
-          <Typography variant="body1" gutterBottom>
-            This project is still in progress, and updates are being made to
-            enhance its functionality and user experience. Stay tuned for more
-            information as development continues.
-          </Typography>
-        </>
-      ),
-    },
   ];
 
   return (
